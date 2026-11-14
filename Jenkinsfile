@@ -5,20 +5,21 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building application from MAIN branch'
+                echo 'Building application from DEVELOPMENT branch'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Testing application'
+                echo 'Testing development application'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application from MAIN branch'
+                echo 'Deploying application from DEVELOPMENT branch'
             }
         }
     }
 }
+
